@@ -5,14 +5,17 @@
   "type": "module",
   "scripts": {
     "start": "node --env-file .env --experimental-strip-types  --no-warning src/server.ts",
-    "dev": "node --env-file .env --experimental-strip-types  --no-warnings --watch src/server.ts"
+    "dev": "node --env-file .env --experimental-strip-types  --no-warnings --watch src/server.ts",
+    "lint": "eslint . --ext .ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@rocketseat/eslint-config": "^2.2.2",
     "@types/node": "^24.0.12",
+    "eslint": "^8.57.1",
     "typescript": "^5.8.3"
   },
   "dependencies": {

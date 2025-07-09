@@ -1,0 +1,6 @@
+{
+  "biome.bin": "npx",
+  "biome.args": ["@biomejs/biome"],
+  "biome.enable": true,
+  "biome.requireConfiguration": true
+} 
