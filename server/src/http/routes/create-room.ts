@@ -32,6 +32,6 @@ export const createRoomRoute: FastifyPluginCallbackZod = (app) => {
       }
 
       return reply.status(201).send({ roomId: insertedRoom.id })
-    }
+    },
   )
 }

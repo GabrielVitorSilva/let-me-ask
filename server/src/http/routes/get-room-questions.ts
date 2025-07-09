@@ -29,6 +29,6 @@ export const getRoomQuestions: FastifyPluginCallbackZod = (app) => {
         .orderBy(desc(schema.questions.createdAt))
 
       return result
-    }
+    },
   )
 }

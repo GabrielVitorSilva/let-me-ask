@@ -22,6 +22,8 @@
     "drizzle-kit": "^0.31.4",
     "drizzle-seed": "^0.3.1",
     "eslint": "^8.57.1",
+    "@fastify/multipart": "9.0.3",
+    "@google/genai": "1.8.0",
     "typescript": "^5.8.3"
   },
   "dependencies": {
