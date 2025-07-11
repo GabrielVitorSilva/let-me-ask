@@ -25,7 +25,7 @@ Content-Type: application/json
 
 ###
 
-# Create room
+# Update room
 # @name updateRoom
 PATCH  {{baseUrl}}/rooms/696bfaf8-a563-4408-835f-4d54d9570b0b
 Content-Type: application/json
@@ -35,6 +35,13 @@ Content-Type: application/json
   "description": "Essa é uma sala de teste"
 }
 
+###
+
+###
+
+# Delete room
+# @name deleteRoom
+DELETE   {{baseUrl}}/rooms/696bfaf8-a563-4408-835f-4d54d9570b0b
 ###
 
 ###
