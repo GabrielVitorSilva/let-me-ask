@@ -3,7 +3,7 @@ import { useRef, useState } from 'react'
 import { Navigate, useParams } from 'react-router-dom'
 import { Button } from '@/components/ui/button'
 import { Toast } from '@/components/ui/toast'
-import { Mic, Pause, CheckCircle2 } from 'lucide-react'
+import { Mic, Pause } from 'lucide-react'
 
 const isRecordingSupported =
   !!navigator.mediaDevices &&

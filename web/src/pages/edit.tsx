@@ -20,14 +20,14 @@ import {
 import { Input } from "../components/ui/input";
 import { Textarea } from "../components/ui/textarea";
 import {
+  Link,
   Navigate,
   useNavigate,
   useParams,
-  type DataStrategyFunctionArgs,
 } from "react-router-dom";
 import { useEditRoom } from "@/http/use-edit-room";
-import { useState } from "react";
 import { useLocation } from "react-router-dom";
+import { ArrowLeft } from "lucide-react";
 
 const editRoomSchema = z.object({
   name: z.string().min(3, { message: "Inclua no mínimo 3 caracteres" }),
@@ -66,7 +66,17 @@ export function EditRoom() {
   }
 
   return (
-    <Card className="w-[90%] m-auto">
+    <div className="min-h-screen bg-zinc-950 flex flex-col items-center">
+      <div className="flex justify-start mt-8 w-[90%] ">
+        <Link to="/">
+          <Button variant="outline" className="">
+            <ArrowLeft className="ml-2 size-4" />
+            Voltar ao Início
+          </Button>
+        </Link>
+      </div>
+    <Card className="w-[90%] m-auto my-20">
+        
       <CardHeader>
         <CardTitle>Editar Sala</CardTitle>
         <CardDescription>Editar uma sala</CardDescription>
@@ -112,6 +122,7 @@ export function EditRoom() {
         </Form>
       </CardContent>
     </Card>
+    </div>
   );
 }
 
