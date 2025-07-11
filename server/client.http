@@ -25,6 +25,20 @@ Content-Type: application/json
 
 ###
 
+# Create room
+# @name updateRoom
+PATCH  {{baseUrl}}/rooms/696bfaf8-a563-4408-835f-4d54d9570b0b
+Content-Type: application/json
+
+{
+  "name": "bd",
+  "description": "Essa é uma sala de teste"
+}
+
+###
+
+###
+
 @roomId = {{createRoom.response.body.$.roomId}}
 
 ###
